@@ -164,9 +164,8 @@
       <h2 class="post-list__post-title post-title"><a href="/2016/12/27/js/" title="link to post.title">js</a></h2>
       <p class="excerpt">
     
-      Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick StartCreate a new post1$ hexo new &quot;My New Post&quot;
-M
+      JS高级预解析
+Js引擎有预解析行为，预解析跟变量提升常结合说明，也就是说在js中我们可以在一个变量声明前或者函数定义前使用而不会报错：is not defined，而是可以正确的运行下去，这种行为本质上可以打比方为在js函数真正运行之前，js引擎会全局搜索一遍，把所有的变量和函数都放在一个白名单里，同时把他们的值初始化为undefined，对于函数会存放函数的地址，预解析完成后，函数会真正的逐行执行代码，然后到达使用某个变量的时候，会在白名单中检查一下是否具有这个名字配置，如果么有找到，说明没
     &hellip;
       </p>
       <div class="post-list__meta"><time datetime="2016-12-27T07:45:00.518Z" class="post-list__meta--date date">2016-12-27</time> &#8226; <span class="post-list__meta--tags tags">于&nbsp;</span><a class="btn-border-small" href="/2016/12/27/js/">继续阅读</a></div>
